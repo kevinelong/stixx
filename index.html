@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stixx Stand | Billiard Products by Bob Grable</title>
+  <meta name="description" content="Catalog brochure for Stixx Stand billiard products by Bob Grable in Tualatin, OR.">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --panel-alt: #1f2937;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --accent: #22d3ee;
+      --accent-2: #38bdf8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: linear-gradient(160deg, #020617, var(--bg));
+    }
+
+    .container {
+      width: min(1000px, 92vw);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 4rem 0 2.5rem;
+    }
+
+    .hero {
+      background: radial-gradient(circle at top right, #0ea5e9 0%, transparent 40%), var(--panel);
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 16px 40px rgba(2, 6, 23, 0.45);
+    }
+
+    h1, h2, h3 { line-height: 1.2; margin-top: 0; }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .lead { color: var(--muted); margin-bottom: 1.5rem; }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.5rem;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .contact a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px dashed var(--accent-2);
+    }
+
+    main { padding-bottom: 3.5rem; }
+
+    .catalog {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      margin-top: 1.5rem;
+    }
+
+    .card {
+      background: var(--panel-alt);
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 1.25rem;
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+
+    .feature {
+      margin-top: 2rem;
+      background: #0b1120;
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 1.5rem;
+    }
+
+    .feature h2 { margin-bottom: 0.5rem; }
+
+    .feature ul { margin: 0.75rem 0 0; }
+
+    footer {
+      border-top: 1px solid #334155;
+      padding: 1rem 0 2rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <section class="hero">
+        <p class="tagline">Billiard Product Catalog</p>
+        <h1>Stixx Stand by Bob Grable</h1>
+        <p class="lead">
+          Premium billiard accessories designed and made by Bob Grable in Tualatin, Oregon.
+          Built for league players, home tables, and on-the-go cue sports enthusiasts.
+        </p>
+        <ul class="contact" aria-label="Contact information">
+          <li><strong>Maker:</strong> Bob Grable</li>
+          <li><strong>Location:</strong> Tualatin, OR</li>
+          <li><strong>Phone:</strong> <a href="tel:+15033329056">503-332-9056</a></li>
+          <li><strong>Email:</strong> <a href="mailto:stixxstand@gmail.com">stixxstand@gmail.com</a></li>
+        </ul>
+      </section>
+    </header>
+
+    <main>
+      <section aria-labelledby="catalog-heading">
+        <h2 id="catalog-heading">Product Line</h2>
+        <div class="catalog">
+          <article class="card">
+            <h3>3D Printed Chalk Holders</h3>
+            <p>
+              Durable, lightweight chalk holders made for convenient access and a cleaner
+              billiard setup. Designed for practical everyday use in pool halls and at home.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Template Rack Holders</h3>
+            <p>
+              Keep your template rack protected and organized between games.
+              These holders help prevent warping and make storage simple and tidy.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Custom Billiard Accessories</h3>
+            <p>
+              Ask about custom colors and practical add-ons to match your gear,
+              table area, and personal style.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="feature" aria-labelledby="flagship-heading">
+        <h2 id="flagship-heading">Flagship Product: The Stixx Stand</h2>
+        <p>
+          The <strong>Stixx Stand</strong> is a collapsible, portable cue holder engineered for players
+          who need reliable cue support anywhere they play.
+        </p>
+        <ul>
+          <li>Collapsible design for easy transport</li>
+          <li>Portable and lightweight for travel and league nights</li>
+          <li>Stable cue support to keep equipment off floors and walls</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> Stixx Stand &bull; Billiard products by Bob Grable
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
